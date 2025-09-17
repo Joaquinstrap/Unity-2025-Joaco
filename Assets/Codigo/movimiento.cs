@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class movimiento : MonoBehaviour
+
+public class Movimiento : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] public float m_speed;
-    [SerializeField] private UnityEngine.RigidBody2D m_rigidbody;
+    [SerializeField] private Rigidbody2D m_rigidbody;
     private Vector2 appliedMovement;
 
     private void FixedUpdate()
